@@ -1,0 +1,680 @@
+body
+{
+    margin:0px;
+    padding:0px;
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: #449ED3;
+    background-image: url("../img/fondo.bonaire.panaderia.jpg");
+    background-size: 100%; 
+}
+
+/* BARRA DE NAVEGACION - BOTONERA */
+
+.tabla1
+ {
+    display: grid;
+    grid-template-rows: 200px 75px 200px 1fr;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+ }
+
+ul, ol {
+    list-style:none;
+}
+
+ .nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#449ED3;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+
+
+/* ALFAJORES y GALLETAS */
+
+
+
+.galery-container
+
+{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 150px;
+padding: 20px;
+grid-gap: 10px;
+}
+
+.galery__item
+{
+position:relative;
+}
+
+.galery__img
+{
+width: 100%;   
+height: 100%;
+object-fit: cover; 
+}
+
+/*
+
+
+/* TITLE DE LOS ALFAJORES Y AFINES*/
+
+.gallery__title
+{
+position:absolute;
+bottom: 0;
+color: white;
+background-color: #449ED3;
+margin: 5px;
+padding: 5px;
+}
+
+.gallery__title:hover
+{
+    background-color: orange;
+}
+
+
+/* FOTOS DE ALFAJORES EN DIFERENTES ESCALAS DE FILAS Y COLUMNAS */
+
+
+
+.galery__item:nth-child(1)
+{
+grid-row-start: span 2;
+}
+
+.galery__item:nth-child(2)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(6)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(7)
+{
+grid-column-start: span 2;
+}
+
+/* RESPONSIVE MODELO PARA SMARTPHONE */
+
+@media (max-width:576px)
+{
+
+/* RESPONSIVE  ALFAJORES */
+/* (max-width:576px) */
+
+.gallery__title:hover
+{
+    background-color: orange;
+}
+
+.galery-container
+    {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .galery__item:nth-child(1)
+    {
+    grid-column-start: span 2;
+    }
+
+    .galery__item:nth-child(5)
+    {
+    grid-column-start: span 2;
+    }
+
+    .galery__item:nth-child(8)
+    {
+    grid-column-start: span 2;
+    }
+
+/* RESPONSIVE  EMPANADAS */
+/* (max-width:576px) */
+
+.gallery__title1:hover
+{
+    background-color: orange;
+}
+
+.galery-container1
+{
+grid-template-columns: repeat(2, 1fr);
+}
+.galery__item1:nth-child(1)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(2)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(3)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(4)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(5)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(6)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(7)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(8)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(9)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(10)
+{
+grid-column-start: span 2;
+}
+
+/* RESPONSIVE FACTURAS */
+/* (max-width:576px) */
+
+.gallery__title2:hover
+{
+    background-color: orange;
+}
+
+.galery-container2
+    {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .galery__item2:nth-child(1)
+    {
+    grid-column-start: span 3;
+    }
+
+    .galery__item2:nth-child(2)
+    {
+    grid-column-start: span 3;
+    }
+
+    .galery__item2:nth-child(3)
+    {
+    grid-column-start: span 3;
+    }
+    
+    .galery__item2:nth-child(4)
+    {
+    grid-column-start: span 3;
+    }
+
+    .galery__item2:nth-child(5)
+    {
+    grid-column-start: span 3;
+    }
+    
+    .galery__item2:nth-child(6)
+    {
+    grid-column-start: span 3;
+    }
+
+/* RESPONSIVE  BOTONERA */
+/* (max-width:500px) */
+
+    .tabla1
+    {
+      display: grid;
+      grid-template-rows: 20px 20px 20px;
+      justify-content: flex-start;
+      font-family: 'Oswald', sans-serif;
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul, ol {
+        list-style:none;
+    }
+    
+     .nav > li {
+        float:left;
+    }
+    
+    .nav li a {
+        background-color:#449ED3;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+    }
+    
+    .nav li a:hover {
+        background-color:#434343;
+    }
+    
+    .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:40px;
+    }
+    
+    .nav li:hover > ul {
+        display:block;
+    }
+    
+    .nav li ul li {
+        position:relative;
+    }
+    
+    .nav li ul li ul {
+        right:-40px;
+        top:0px;
+    }
+
+}
+
+/* RESPONSIVE MODELO PARA TABLET */
+@media (min-width:577px) and (max-width:1023px)
+
+/* RESPONSIVE  ALFAJORES */
+/* (min-width:768px) */
+
+{
+.galery-container
+    {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+.galery__item:nth-child(1)
+{
+grid-row-start: span 2;
+}
+
+.galery__item:nth-child(2)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(6)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(7)
+{
+grid-column-start: span 2;
+}
+
+/* RESPONSIVE  EMPANADAS */
+/* (min-width:768px) */
+
+.galery-container1
+    {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+.galery__item1:nth-child(1)
+{
+grid-row-start: span 2;
+}
+
+.galery__item1:nth-child(2)
+{
+grid-column-start: span 1;
+}
+
+.galery__item1:nth-child(3)
+{
+grid-row-start: span 1;
+}
+
+.galery__item1:nth-child(5)
+{
+grid-row-start: span 1;
+}
+
+.galery__item1:nth-child(7)
+{
+grid-column-start: span 1;
+}
+
+.galery__item1:nth-child(8)
+{
+grid-row-start: span 1;
+}
+
+.galery__item1:nth-child(9)
+{
+grid-row-start: span 1;
+}
+
+.galery__item1:nth-child(10)
+{
+grid-row-start: span 1;
+}
+
+/* RESPONSIVE FACTURAS */
+/* (min-width:768px) */
+
+.galery-container2
+    {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .galery__item2:nth-child(1)
+    {
+    grid-column-start: span 1;
+    }
+
+    .galery__item2:nth-child(2)
+    {
+    grid-column-start: span 1;
+    }
+
+    .galery__item2:nth-child(3)
+    {
+    grid-column-start: span 1;
+    }
+    
+    .galery__item2:nth-child(4)
+    {
+    grid-column-start: span 1;
+    }
+
+    .galery__item2:nth-child(5)
+    {
+    grid-column-start: span 1;
+    }
+    
+    .galery__item2:nth-child(6)
+    {
+    grid-column-start: span 1;
+    }
+
+}
+
+/* RESPONSIVE MODELO PARA DESKTOP */
+
+@media (min-width:1024px)
+
+/* RESPONSIVE  ALFAJORES */
+/* (min-width:1024px) */
+
+{
+.galery-container
+    {
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    }
+
+.galery__item:nth-child(1)
+{
+grid-row-start: span 2;
+}
+
+.galery__item:nth-child(2)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(4)
+{
+grid-row-start: span 2;
+}
+
+.galery__item:nth-child(6)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(7)
+{
+grid-column-start: span 2;
+}
+
+.galery__item:nth-child(8)
+{
+grid-column-start: span 3;
+}
+
+/* RESPONSIVE  EMPANADAS */
+/* (min-width:1024px) */
+
+.galery-container1
+    {
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    }
+
+.galery__item1:nth-child(1)
+{
+grid-row-start: span 3;
+}
+
+.galery__item1:nth-child(2)
+{
+grid-row-start: span 3;
+}
+
+.galery__item1:nth-child(3)
+{
+grid-row-start: span 2;
+}
+
+.galery__item1:nth-child(4)
+{
+grid-row-start: span 3;
+}
+
+.galery__item1:nth-child(5)
+{
+grid-row-start: span 4;
+}
+
+.galery__item1:nth-child(6)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(7)
+{
+grid-column-start: span 2;
+}
+
+.galery__item1:nth-child(8)
+{
+grid-column-start: span 3;
+}
+
+.galery__item1:nth-child(9)
+{
+grid-column-start: span 3;
+grid-row-start: span 1;
+}
+
+.galery__item1:nth-child(10)
+{
+grid-column-start: span 4;
+grid-row-start: span 1;
+}
+
+/* RESPONSIVE FACTURAS */
+/* (min-width:1024px) */
+
+.galery-container2
+    {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .galery__item2:nth-child(1)
+    {
+    grid-column-start: span 3;
+    }
+
+    .galery__item2:nth-child(2)
+    {
+    grid-row-start: span 1;
+    }
+
+    .galery__item2:nth-child(3)
+    {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+    }
+    
+    .galery__item2:nth-child(4)
+    {
+    grid-column-start: span 1;
+    }
+
+    .galery__item2:nth-child(5)
+    {
+    grid-column-start: span 2;
+    }
+    
+    .galery__item2:nth-child(6)
+    {
+    grid-column-start: span 2;
+    }
+
+}
+
+/* EMPANADAS ARGENTINAS */
+
+.galery-container1
+
+{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 150px;
+padding: 20px;
+grid-gap: 10px;
+}
+
+.galery__item1
+{
+position:relative;
+}
+
+.galery__img1
+{
+width: 100%;   
+height: 100%;
+object-fit: cover; 
+}
+
+/* TITLE DE LAS EMPANADAS */
+
+.gallery__title1
+{
+position:absolute;
+bottom: 0;
+color: white;
+background-color: lightsalmon;
+margin: 5px;
+padding: 5px;
+}
+
+
+/* FACTURAS */
+
+.galery-container2
+
+{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 450px;
+padding: 20px;
+grid-gap: 5px;
+}
+
+.galery__item2
+{
+position:relative;
+}
+
+.galery__img2
+{
+width: 100%;   
+height: 100%;
+object-fit: cover; 
+}
+
+/* TITLE DE LAS FACTURAS */
+
+.gallery__title2
+{
+position:absolute;
+bottom: 0;
+color: white;
+background-color: rgb(158, 95, 14);
+margin: 5px;
+padding: 5px;
+}
+
+
+/* FOOTER 
+
+.footer
+
+{
+background-color: #434343;
+padding: 1em;
+position: absolute;
+bottom: 0;
+}
+
+*/
+
+/* FORMULARIO DE CONTACTO */
